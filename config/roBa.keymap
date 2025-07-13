@@ -48,11 +48,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1 2>;
         };
-
-        all {
-            bindings = <&kp LC(A)>;
-            key-positions = <10 11>;
-        };
     };
 
     macros {
