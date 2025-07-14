@@ -26,29 +26,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        eq {
-            bindings = <&kp MINUS>;
-            key-positions = <9 8>;
-        };
-
-        wq {
-            bindings = <&kp EQUAL>;
-            key-positions = <20 21>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1 2>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -76,7 +54,7 @@
         default_layer {
             bindings = <
 &kp Q               &kp W         &kp E         &kp R        &kp T                                                      &kp Y             &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S         &kp D         &kp F        &kp G             &kp SEMICOLON         &kp MINUS          &kp H             &kp J  &lt 5 K    &kp L    &kp ENTER
+&mt LEFT_CONTROL A  &kp S         &kp D         &kp F        &kp G             &kp SQT               &kp SEMICOLON      &kp H             &kp J  &lt 5 K    &kp L    &kp ENTER
 &mt LEFT_SHIFT Z    &kp X         &kp C         &kp V        &kp B             &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL           &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 SPACE  &lt 2 LANGUAGE_2  &mkp MB1              &lt 6 BACKSPACE    &lt 1 LANGUAGE_1                             &kp GRAVE
             >;
@@ -104,10 +82,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE         &kp LC(LS(TAB))         &kp END     &kp LC(TAB)              &trans                        &trans         &trans  &trans  &trans  &kp UP_ARROW
-&mt LEFT_WIN HOME  &trans                  &kp DELETE  &kp RIGHT_ARROW          &kp END   &trans      &trans  &kp BACKSPACE  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT     &kp LG(LS(LEFT_ARROW))  &trans      &kp LG(LS(RIGHT_ARROW))  &kp LEFT  &trans      &trans  &kp DOWN       &trans  &trans  &trans  &trans
-&trans             &trans                  &trans      &trans                   &trans    &trans      &trans  &trans                                 &trans
+&kp TAB            &kp ESCAPE  &kp END     &kp LC(TAB)      &trans                        &trans         &trans  &trans  &trans  &kp UP_ARROW
+&mt LEFT_WIN HOME  &trans      &kp DELETE  &kp RIGHT_ARROW  &kp END   &trans      &trans  &kp BACKSPACE  &trans  &trans  &trans  &kp MINUS
+&kp LEFT_SHIFT     &trans      &trans      &trans           &kp LEFT  &trans      &trans  &kp DOWN       &trans  &trans  &trans  &kp EQUAL
+&trans             &trans      &trans      &trans           &trans    &trans      &trans  &trans                                 &kp NON_US_BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
