@@ -39,7 +39,12 @@
         reset_ime_to_layer: reset_ime_to_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &lt 3 SPACE>;
+            bindings =
+                <&macro_press>,
+                <&kp LANGUAGE_2>,
+                <&macro_release>,
+                <&lt 3 SPACE>;
+
             label = "RESET_IME_TO_LAYER";
         };
     };
