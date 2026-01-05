@@ -72,8 +72,8 @@
         NUM {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp NUMBER_6   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp HOME      &trans        &kp DEL       &kp RIGHT     &kp TAB       &trans      &trans  &kp BACKSPACE  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
-&trans        &trans        &trans        &trans        &kp LEFT      &trans      &trans  &trans         &kp END       &trans        &trans        &trans
+&kp HOME      &trans        &kp DEL       &kp RIGHT     &kp TAB       &trans      &trans  &kp BACKSPACE  &trans        &kp UP        &trans        &kp END
+&trans        &trans        &trans        &trans        &kp LEFT      &trans      &trans  &trans         &kp LEFT      &kp DOWN      &kp RIGHT     &trans
 &trans        &trans        &trans        &trans        &trans        &trans      &trans  &trans                                                   &trans
             >;
         };
