@@ -33,11 +33,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
-
-        function {
-            bindings = <&mo 7>;
-            key-positions = <37 38>;
-        };
     };
 
     macros {
