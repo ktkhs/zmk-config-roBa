@@ -33,6 +33,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        ctrlshift {
+            bindings = <&kp LS(LEFT_CONTROL)>;
+            key-positions = <10 22>;
+        };
     };
 
     macros {
